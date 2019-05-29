@@ -1,11 +1,11 @@
-# stdlog
-**stdlog** provides a unified and simple approach for class and function logging.
+# stdlogger
+**stdlogger** provides a unified and simple approach for class and function logging.
 
 [![Version][badge-vers]][npm]
 [![Dependencies][badge-deps]][npm]
 [![Vulnerabilities][badge-vuln]](https://snyk.io/)
 [![Build Status][badge-tests]][travis]
-[![Coverage Status][badge-coverage]](https://coveralls.io/github/pustovitDmytro/stdlog?branch=master)
+[![Coverage Status][badge-coverage]](https://coveralls.io/github/pustovitDmytro/stdlogger?branch=master)
 [![License][badge-lic]][github]
 
 ## Table of Contents
@@ -24,7 +24,7 @@ To use library you need to have [node](https://nodejs.org) and [npm](https://www
 
 To install the library run following command
 ```bash
-  npm i --save stdlog
+  npm i --save stdlogger
 ```
 
 
@@ -50,13 +50,13 @@ The Tag is one of the following:
 The message summary should be a one-sentence description of the change. The issue number should be mentioned at the end.
 
 
-[npm]: https://www.npmjs.com/package/stdlog
-[github]: https://github.com/pustovitDmytro/stdlog
-[travis]: https://travis-ci.org/pustovitDmytro/stdlog
-[coveralls]: https://coveralls.io/github/pustovitDmytro/stdlog?branch=master
-[badge-deps]: https://img.shields.io/david/pustovitDmytro/stdlog.svg
-[badge-tests]: https://img.shields.io/travis/pustovitDmytro/stdlog.svg
-[badge-vuln]: https://img.shields.io/snyk/vulnerabilities/npm/stdlog.svg?style=popout
-[badge-vers]: https://img.shields.io/npm/v/stdlog.svg
-[badge-lic]: https://img.shields.io/github/license/pustovitDmytro/stdlog.svg
-[badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/stdlog/badge.svg?branch=master
+[npm]: https://www.npmjs.com/package/stdlogger
+[github]: https://github.com/pustovitDmytro/stdlogger
+[travis]: https://travis-ci.org/pustovitDmytro/stdlogger
+[coveralls]: https://coveralls.io/github/pustovitDmytro/stdlogger?branch=master
+[badge-deps]: https://img.shields.io/david/pustovitDmytro/stdlogger.svg
+[badge-tests]: https://img.shields.io/travis/pustovitDmytro/stdlogger.svg
+[badge-vuln]: https://img.shields.io/snyk/vulnerabilities/npm/stdlogger.svg?style=popout
+[badge-vers]: https://img.shields.io/npm/v/stdlogger.svg
+[badge-lic]: https://img.shields.io/github/license/pustovitDmytro/stdlogger.svg
+[badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/stdlogger/badge.svg?branch=master
