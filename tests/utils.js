@@ -1,6 +1,6 @@
 import { assert } from 'chai';
 import { stdout } from 'test-console';
-import { toArray } from '../src/utils';
+import { toArray } from '../src/utils/common';
 
 export const testFunction = func => (input, expected) => {
     const out = func(input);
@@ -16,7 +16,7 @@ export function verifyStdout(logger, expected, { level = 'info', single = true }
     }
 }
 
-export function verifyConsoleStdout(functionUnderTest, expected, opts = { json: true }) {
+export function verifyConsoleStdout(functionUnderTest, expected, opts = { }) {
     const inspect = stdout.inspect();
 
     functionUnderTest();
@@ -26,13 +26,16 @@ export function verifyConsoleStdout(functionUnderTest, expected, opts = { json: 
     if (!expected) {
         return assert.notExists(output);
     }
+
     if (opts.json) {
         const { level, ...message } = JSON.parse(output); // eslint-disable-line no-unused-vars
 
         return assert.deepEqual(message, expected);
     }
+
     if (opts.regexp) {
         return expected.forEach(reg => assert.match(output, reg));
     }
+
     assert.equal(output, expected);
 }
