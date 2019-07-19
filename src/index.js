@@ -1,1 +1,3 @@
-module.exports = console;
+import Logger from './Logger';
+
+export default new Logger();
