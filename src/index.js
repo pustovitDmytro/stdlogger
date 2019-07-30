@@ -1,5 +1,6 @@
-import Logger from './Logger';
+import L from './Logger';
+
+export const Logger = L;
 
 export default new Logger();
 
-// export const Logger;
