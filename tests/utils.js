@@ -1,23 +1,12 @@
 import { assert } from 'chai';
-import { stdout } from 'test-console';
-import { toArray } from '../src/utils/common';
+import { stdout, stderr } from 'test-console';
 
-export const testFunction = func => (input, expected) => {
-    const out = func(input);
-
-    assert.deepEqual(out, expected);
-};
-
-export function verifyStdout(logger, expected, { level = 'info', single = true } = {}) {
-    if (single) {
-        assert.deepOwnInclude(logger.stdout(level)[0], expected);
-    } else {
-        assert.deepEqual(logger.stdout(level), toArray(expected));
-    }
+export function verifyConsoleStderr(functionUnderTest, expected, opts = { }) {
+    verifyConsoleStdout(functionUnderTest, expected, { ...opts, stderr: true });
 }
 
 export function verifyConsoleStdout(functionUnderTest, expected, opts = { }) {
-    const inspect = stdout.inspect();
+    const inspect = opts.stderr ? stderr.inspect() : stdout.inspect();
 
     functionUnderTest();
     inspect.restore();
