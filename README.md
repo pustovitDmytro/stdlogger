@@ -1,5 +1,5 @@
 # stdlogger
-**stdlogger** provides a unified and simple approach for class and function logging.
+**stdlogger** simple isomorfic logger that uses console transport.
 
 [![Version][badge-vers]][npm]
 [![Dependencies][badge-deps]][npm]
@@ -13,7 +13,6 @@
   - [Installation](#installation)
   - [Usage](#usage)
 
-
 ## Requirements
 To use library you need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com) installed in your machine:
 
@@ -23,10 +22,41 @@ To use library you need to have [node](https://nodejs.org) and [npm](https://www
 ## Installation
 
 To install the library run following command
+
 ```bash
   npm i --save stdlogger
 ```
 
+## Simple usage
+
+```javascript
+import logger from 'stdlogger';
+
+logger.log('some text');
+
+logger.log('debug', 'some debug text');
+logger.log('verbose', 'some verbose text');
+logger.log('info', 'some info text');
+logger.log('error', 'some error text');
+
+logger.debug('some debug text');
+logger.verbose('some verbose text');
+logger.info('some info text');
+logger.error('some error text');
+```
+
+## Advanced usage
+
+```javascript
+import { Logger } from 'stdlogger';
+
+const logger = new Logger({ 
+  level: 'info',
+  format: 'json' 
+});
+
+logger.log({ object: true });
+```
 
 ## Contribute
 

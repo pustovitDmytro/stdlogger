@@ -1,7 +1,7 @@
 {
   "name": "stdlogger",
   "version": "1.0.0",
-  "description": "provides a unified and simple approach for class and function logging",
+  "description": "simple isomorfic logger that uses console transport",
   "main": "./lib",
   "config": {
     "MOCHA_OPTS": "--timeout 60000 --exit --reporter spec --ui qunit tests/**/*.js"
