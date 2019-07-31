@@ -4,6 +4,14 @@ function simpleFormatter(options, data) {
     return data;
 }
 
+function jsonFormatter(options, data) {
+    return [
+        data.length > 1
+            ? JSON.stringify(data)
+            : JSON.stringify(data[0])
+    ];
+}
+
 export default class Formatter {
     constructor(config = {}) {
         const { type, ...options } = config;
@@ -16,6 +24,8 @@ export default class Formatter {
         switch (this.type) {
             case 'simple':
                 return this.format = simpleFormatter.bind(this, options);
+            case 'json':
+                return this.format = jsonFormatter.bind(this, options);
             default:
                 throw new Error(`Unrecognized formatter type${this.type}`);
         }

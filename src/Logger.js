@@ -16,7 +16,10 @@ export default class Logger {
             });
 
         this._init();
-        const formatter = new Formatter();
+        const formatter = new Formatter({
+            type : config.format,
+            ...config.formatter
+        });
 
         this.format = formatter.format;
     }
