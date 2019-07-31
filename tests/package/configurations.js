@@ -1,11 +1,11 @@
 // import { assert } from 'chai';
 import logger from '../entry';
-import { verifyConsoleStdout } from '../utils';
+import { verifyStdout } from '../utils';
 
 suite('Configurations');
 
 test('Default configuration', function () {
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         logger.log({ object: true });
     }, '{ object: true }\n');
 });

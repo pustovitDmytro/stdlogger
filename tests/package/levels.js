@@ -1,16 +1,16 @@
 // import { assert } from 'chai';
 import logger, { Logger } from '../entry';
-import { verifyConsoleStdout, verifyConsoleStderr } from '../utils';
+import { verifyStdout, verifyStderr } from '../utils';
 
 suite('Levels');
 
 test('Default logger levels', function () {
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         logger.log(1);
     }, '1\n');
 
     [ 'debug', 'verbose', 'info' ].forEach(level => {
-        verifyConsoleStdout(() => {
+        verifyStdout(() => {
             logger[level](`2-${level}`);
         }, `2-${level}\n`);
     });
@@ -19,35 +19,35 @@ test('Default logger levels', function () {
 test('filter levels', function () {
     const l = new Logger({ level: 'info' });
 
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         l.debug(3);
     }, null);
 
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         l.verbose(4);
     }, null);
 
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         l.info(5);
     }, '5\n');
 });
 
 test('error level', function () {
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         logger.error(6);
     }, null);
 
-    verifyConsoleStderr(() => {
+    verifyStderr(() => {
         logger.error(7);
     }, '7\n');
 });
 
 test('expanded level notation', function () {
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         logger.log('debug', 'believed');
     }, 'believed\n');
 
-    verifyConsoleStdout(() => {
+    verifyStdout(() => {
         logger.log('debug', 'believed', [ 1, 2, 3 ]);
     }, 'believed [ 1, 2, 3 ]\n');
 });
