@@ -1,4 +1,5 @@
 // import { assert } from 'chai';
+import { assert } from 'chai';
 import { Logger } from '../entry';
 import { verifyStdout } from '../utils';
 
@@ -46,3 +47,13 @@ test('json formatter: multiple arguments', function () {
     }, `${expected}\n`);
 });
 
+
+test('unknown formatter', function () {
+    try {
+        const logger = new Logger({ format: 'csv' });
+
+        assert.fail('expected to fail', logger);
+    } catch (error) {
+        assert.match(error, /unrecognized formatter/i);
+    }
+});

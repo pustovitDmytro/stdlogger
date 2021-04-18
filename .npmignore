@@ -3,4 +3,13 @@ tests
 .travis.yml
 .eslintrc
 .eslintignore 
-.babelrc 
+.babelrc
+tmp
+.husky
+bin
+*.tgz
+.commitlintrc.json
+.mocharc.json
+.nycrc.json
+.releaserc.json
+coverage/*
