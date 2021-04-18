@@ -43,7 +43,7 @@ test('Symbols', function () {
 test('Sets', function () {
     verifyStdout(() => {
         logger.log(new Set([ 1, 2, 34, 5, 1 ]));
-    }, 'Set { 1, 2, 34, 5 }\n');
+    }, [ /Set.* { 1, 2, 34, 5 }\n/ ], { regexp: true });
 });
 
 test('Multiple arguments', function () {
