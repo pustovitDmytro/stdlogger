@@ -27,7 +27,7 @@ export default class Formatter {
             case 'json':
                 return this.format = jsonFormatter.bind(this, options);
             default:
-                throw new Error(`Unrecognized formatter type${this.type}`);
+                throw new Error(`Unrecognized formatter type: ${this.type}`);
         }
     }
 }

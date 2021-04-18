@@ -3,6 +3,13 @@ import defaults from './defaults';
 import { isFunction } from './utils/common';
 import Formatter from './Formatter';
 
+function cloneConsoleConfig(obj) {
+    return {
+        ...obj,
+        inspectOptions : { ...obj.inspectOptions }
+    };
+}
+
 export default class Logger {
     constructor(config = {}) {
         this.levels = config.levels || defaults.levels;
@@ -10,11 +17,10 @@ export default class Logger {
         this.native = config.native || defaults.native;
         this._console = this.native
             ? console
-            : new Console({
+            : new Console(cloneConsoleConfig({
                 ...defaults.console,
                 ...config.console
-            });
-
+            }));
         this._init();
         const formatter = new Formatter({
             type : config.format,
