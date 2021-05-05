@@ -35,6 +35,7 @@ export default class Logger {
 
         this.levels.forEach((level, index) => {
             if (index < levelIndex) return this[level] = () => {};
+
             const consoleLevel = this._getConsoleLevel(level);
 
             this[level] = (...data) => {
@@ -55,6 +56,7 @@ export default class Logger {
         if (this.levels.includes(level)) {
             return this[level](...data);
         }
+
         const formatted = this.format([ level, ...data ]);
 
         this._console.log(...formatted);

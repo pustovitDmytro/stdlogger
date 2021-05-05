@@ -8,8 +8,12 @@ export function verifyStderr(functionUnderTest, expected, opts = { }) {
 export function verifyStdout(functionUnderTest, expected, opts = { }) {
     const inspect = opts.stderr ? stderr.inspect() : stdout.inspect();
 
-    functionUnderTest();
-    inspect.restore();
+    try {
+        functionUnderTest();
+    } finally {
+        inspect.restore();
+    }
+
     const [ output ] = inspect.output;
 
     if (!expected) {
