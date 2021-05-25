@@ -1,13 +1,10 @@
 /* eslint-disable security/detect-non-literal-require */
-import path from 'path';
+import { entry } from './constants';
 
-const isBuild = process.env.BUILD && [ '1', 'true' ].includes(process.env.BUILD);
-const entry = process.env.ENTRY && path.resolve(process.env.ENTRY)
-|| isBuild && path.resolve(__dirname, '../lib')
-|| path.resolve(__dirname, '../src');
+const m = require(entry);
 
-module.exports = require(entry);
+export default m.default;
 
-export function _load(relPath) {
-    return require(path.join(entry, relPath));
-}
+const { Logger } = m;
+
+export { Logger };
