@@ -3,11 +3,11 @@ import { assert } from 'chai';
 import { stdout, stderr } from 'test-console';
 import { entry } from './constants';
 
-export function verifyStderr(functionUnderTest, expected, opts = { }) {
+export function verifyStderr(functionUnderTest, expected, opts = {}) {
     verifyStdout(functionUnderTest, expected, { ...opts, stderr: true });
 }
 
-export function verifyStdout(functionUnderTest, expected, opts = { }) {
+export function verifyStdout(functionUnderTest, expected, opts = {}) {
     const inspect = opts.stderr ? stderr.inspect() : stdout.inspect();
 
     try {

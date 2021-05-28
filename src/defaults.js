@@ -2,7 +2,7 @@ const levels = [ 'debug', 'verbose', 'info', 'error' ];
 const native = false;
 const format = 'simple';
 const inspect = {
-    breakLength    : Infinity,
+    breakLength    : Number.POSITIVE_INFINITY,
     depth          : 4,
     maxArrayLength : 10,
     compact        : true,
