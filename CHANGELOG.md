@@ -1,3 +1,31 @@
+## [1.3.2](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.1...v1.3.2) (2021-06-13)
+
+
+### Chore
+
+* (refactor) update code to new styleguide ([2dc593c](https://github.com/pustovitDmytro/stdlogger/commit/2dc593cc8d397bd59cb82222a04a6a2d066684ee))
+* adds stabilityDays to renovate ([3b262bc](https://github.com/pustovitDmytro/stdlogger/commit/3b262bcefc6db318d2a7d9103f9f5f42315202d5))
+* fix json in renovate ([8ad7928](https://github.com/pustovitDmytro/stdlogger/commit/8ad792825b2703e3159b65faf722eb43a1d9d421))
+* fixes npm  audit ([c3beccd](https://github.com/pustovitDmytro/stdlogger/commit/c3beccdf1926d72dcf9b13cd153e37916f1a8d13))
+* fixes npm audit ([9669a93](https://github.com/pustovitDmytro/stdlogger/commit/9669a935373891e4bf939c0e5c40503a7dd3c3b8))
+* integrate fossa ([b65e961](https://github.com/pustovitDmytro/stdlogger/commit/b65e961a5ae500b1b5fd12fce3436e71c1518e35))
+* integrate node-package-tester ([9d53bf3](https://github.com/pustovitDmytro/stdlogger/commit/9d53bf30d295368e7f1e925c18b00e48cc16014e))
+* Lock file maintenance ([3291a21](https://github.com/pustovitDmytro/stdlogger/commit/3291a2144ee143dc327f6fb4a8b82e62e07b1c1f))
+* Lock file maintenance ([31f867d](https://github.com/pustovitDmytro/stdlogger/commit/31f867d31a8d7525f52fd23e88e0ed594501223c))
+* set YARGS_MIN_NODE_VERSION 10 ([9b6bef9](https://github.com/pustovitDmytro/stdlogger/commit/9b6bef9d89f8f0c958ee1fe60f20475dd20c8276))
+* Update dependency eslint-plugin-unicorn to v33 ([bfa00ff](https://github.com/pustovitDmytro/stdlogger/commit/bfa00ff354dfb9ffe717e9a36f7a938d44b32611))
+* Update dependency eslint-plugin-unicorn to v33 ([0dc77fe](https://github.com/pustovitDmytro/stdlogger/commit/0dc77fee059d351d9760281d81e3607c76301f89))
+* Update dependency glob-parent to 5.1.2 [SECURITY] ([c957512](https://github.com/pustovitDmytro/stdlogger/commit/c957512cf496d9b99e2278b44b6bb9da545f57a8))
+* Update dependency glob-parent to 5.1.2 [SECURITY] ([c31a943](https://github.com/pustovitDmytro/stdlogger/commit/c31a943cb80a77d17f4e24abab926484bca116e7))
+* Update dependency mocha to v9 ([93b7a17](https://github.com/pustovitDmytro/stdlogger/commit/93b7a1783ea97a7bcd94d570ef33b61314c93746))
+* update eslint ([6b174b1](https://github.com/pustovitDmytro/stdlogger/commit/6b174b184a792fc282ef3228079f23fa81f2bcb5))
+* update eslint-config-incredible ([2f39edb](https://github.com/pustovitDmytro/stdlogger/commit/2f39edb6b44795918e8650be3e727b8e7abb61b7))
+* update eslint-config-incredible ([58c31d2](https://github.com/pustovitDmytro/stdlogger/commit/58c31d295fa2df7cb3dceda8db6a417144a4b1c3))
+
+### Fix
+
+* set babel target node version to 10 ([f736568](https://github.com/pustovitDmytro/stdlogger/commit/f73656838a20d11da6680579cfccc24a9f4a1201))
+
 ## [1.3.1](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.0...v1.3.1) (2021-05-25)
 
 

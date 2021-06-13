@@ -1,6 +1,6 @@
 {
   "name": "stdlogger",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "simple isomorfic logger that uses console transport",
   "main": "./lib",
   "config": {
