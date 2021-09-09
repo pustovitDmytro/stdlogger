@@ -1,3 +1,55 @@
+## [1.3.3](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.2...v1.3.3) (2021-09-09)
+
+
+### Chore
+
+* adds  a security policy ([ed86aba](https://github.com/pustovitDmytro/stdlogger/commit/ed86aba2326eab4d7ef6045913a06b8e80b73dce))
+* adds 'typo' PR template ([e20404d](https://github.com/pustovitDmytro/stdlogger/commit/e20404d5f844e87f38558d6986e31df4c214fc3f))
+* adds bump strategy for devDependencies (non-major) ([03c9587](https://github.com/pustovitDmytro/stdlogger/commit/03c958728c482d04225d3368aebae8fadc7d6a4d))
+* adds CODE_OF_CONDUCT ([a969a8d](https://github.com/pustovitDmytro/stdlogger/commit/a969a8d7c4b9ea8552ef90d21d1cbef068c9ee4c))
+* adds gitleaks to circle pipeline ([114946e](https://github.com/pustovitDmytro/stdlogger/commit/114946e5b0a0ec0437929c5963e7efe258391b9e))
+* adds sonarcloud config ([c92973d](https://github.com/pustovitDmytro/stdlogger/commit/c92973d998ecee059594fbcdd35b9be0c08ffd0b))
+* adds sponsorships ([35ed8e0](https://github.com/pustovitDmytro/stdlogger/commit/35ed8e0ddac94bdc52545be1d533be48495c8d60))
+* combine mine packages in renovate updates ([54c97b8](https://github.com/pustovitDmytro/stdlogger/commit/54c97b8debfe5eae07fe83947378d03eaaea5763))
+* create auto pr for major dependencies ([d2583a6](https://github.com/pustovitDmytro/stdlogger/commit/d2583a6277808bbd2aa5ec69dbd1639c10458c9a))
+* enhance own updates commit messages ([49a2365](https://github.com/pustovitDmytro/stdlogger/commit/49a2365c0a49363e42365503939b98819a6c1864))
+* fixes audit [devDependencies] ([d08b1fc](https://github.com/pustovitDmytro/stdlogger/commit/d08b1fc075b7eef59c59f755e1ee96748824e415))
+* fixes renovate config ([982abaf](https://github.com/pustovitDmytro/stdlogger/commit/982abaf61a98de14dadc2fcb8b37b854577cbc64))
+* Lock file maintenance ([47bfacf](https://github.com/pustovitDmytro/stdlogger/commit/47bfacf4e2ffe672c96345481ddfa6811d4d4d69))
+* Lock file maintenance ([19c2389](https://github.com/pustovitDmytro/stdlogger/commit/19c23891056afb813e4dde92e7f40f0905896bc9))
+* Lock file maintenance ([2b00aec](https://github.com/pustovitDmytro/stdlogger/commit/2b00aec84097bd21c51a43ab785225798753dbae))
+* Lock file maintenance ([dea06c9](https://github.com/pustovitDmytro/stdlogger/commit/dea06c9d3e2dd4448e997ee081425b1a765fae87))
+* Lock file maintenance ([e0043d8](https://github.com/pustovitDmytro/stdlogger/commit/e0043d89de5576939e701f567ab1a871c2c8a057))
+* Lock file maintenance ([34eadb1](https://github.com/pustovitDmytro/stdlogger/commit/34eadb19ade7cf70507b7a9ac2293a691cc08919))
+* Lock file maintenance ([5d305a8](https://github.com/pustovitDmytro/stdlogger/commit/5d305a8337cccbb1efcb4885805960941f40b143))
+* Lock file maintenance ([cdf4f11](https://github.com/pustovitDmytro/stdlogger/commit/cdf4f112eebab895c624210cc672ab00ba2fa443))
+* not allow to fail on node 16 ([22ed683](https://github.com/pustovitDmytro/stdlogger/commit/22ed683ace773b242382c094b363a1713f9d8352))
+* removes unused devDependencies ([ddb100a](https://github.com/pustovitDmytro/stdlogger/commit/ddb100aa634ab2e1d2695de73d9aeb4a7795ccce))
+* Update commitlint monorepo to v13 ([542f309](https://github.com/pustovitDmytro/stdlogger/commit/542f309c44b8d494b9ff35dc43563c87cc188add))
+* Update dependency @rollup/plugin-commonjs to v20 ([740bcf5](https://github.com/pustovitDmytro/stdlogger/commit/740bcf59367817441306fb36fdbd6bef172a0ead))
+* Update dependency eslint-plugin-regexp to ^0.12.0 ([c0ef417](https://github.com/pustovitDmytro/stdlogger/commit/c0ef4173fe80473bb36eace8f5ece1510c360b05))
+* Update dependency eslint-plugin-regexp to ^0.12.0 ([51ff304](https://github.com/pustovitDmytro/stdlogger/commit/51ff3049b892e9ee5655761e53454e4c601fba27))
+* Update dependency eslint-plugin-regexp to ^0.13.0 (#26) ([2ba86a4](https://github.com/pustovitDmytro/stdlogger/commit/2ba86a4a152918e4bfc4b457dc114862ab8eb61f)), closes [#26](https://github.com/pustovitDmytro/stdlogger/issues/26)
+* Update dependency eslint-plugin-regexp to ^0.13.0 (#36) ([3a8d3ec](https://github.com/pustovitDmytro/stdlogger/commit/3a8d3ecefa7c49575b4c6de6832690117d852dd7)), closes [#36](https://github.com/pustovitDmytro/stdlogger/issues/36)
+* Update dependency eslint-plugin-regexp to v1 (#33) ([1ac16bc](https://github.com/pustovitDmytro/stdlogger/commit/1ac16bc69b41b102b5e0a7022f03815cd891f4c6)), closes [#33](https://github.com/pustovitDmytro/stdlogger/issues/33)
+* Update dependency eslint-plugin-sonarjs to ^0.10.0 ([2bd8712](https://github.com/pustovitDmytro/stdlogger/commit/2bd8712185436b90273d1c7a0ab15af11220c2c7))
+* Update dependency eslint-plugin-sonarjs to ^0.9.0 ([967fad3](https://github.com/pustovitDmytro/stdlogger/commit/967fad3a9dda043ce002d6786e609626a9d4538d))
+* Update dependency eslint-plugin-sonarjs to ^0.9.0 ([81d9681](https://github.com/pustovitDmytro/stdlogger/commit/81d9681ef601c70ee83a7ca26b199d647fc4ca0e))
+* Update dependency eslint-plugin-unicorn to v34 (#24) ([a1352bd](https://github.com/pustovitDmytro/stdlogger/commit/a1352bda9bbec421d49cfc1ca20ddb958051df33)), closes [#24](https://github.com/pustovitDmytro/stdlogger/issues/24)
+* Update dependency eslint-plugin-unicorn to v34 (#34) ([86efbac](https://github.com/pustovitDmytro/stdlogger/commit/86efbac96c6fbd1055c7e83fc3a42a861836b943)), closes [#34](https://github.com/pustovitDmytro/stdlogger/issues/34)
+* Update dependency eslint-plugin-unicorn to v35 ([dd155ae](https://github.com/pustovitDmytro/stdlogger/commit/dd155aec8f94066be4485e6580b221cc1add29cf))
+* Update dependency husky to v7 ([3578711](https://github.com/pustovitDmytro/stdlogger/commit/35787117161955387aad52949d506c0fbaf42edf))
+* Update dependency husky to v7 ([c2f176b](https://github.com/pustovitDmytro/stdlogger/commit/c2f176b0d620915b81de08e58d08f2d39fe90f60))
+* Update dependency test-console to v2 ([6b9919c](https://github.com/pustovitDmytro/stdlogger/commit/6b9919cbaf0d4977c6f2830aacb41f520a3de96c))
+* Update devDependencies (non-major) ([51200bf](https://github.com/pustovitDmytro/stdlogger/commit/51200bf4f3ac07c957f6861fd819319a28710689))
+* Update devDependencies (non-major) ([33211c3](https://github.com/pustovitDmytro/stdlogger/commit/33211c31d168fc187eb028f92eaeeff48ccfd085))
+* Update devDependencies (non-major) (#48) ([b3f6184](https://github.com/pustovitDmytro/stdlogger/commit/b3f6184966d64e7a20a5176ddca6c63d1e275520)), closes [#48](https://github.com/pustovitDmytro/stdlogger/issues/48)
+* Update devDependencies (non-major) to v13 ([6894ad9](https://github.com/pustovitDmytro/stdlogger/commit/6894ad97aeac91f931506c360822f81c861e2e83))
+
+### Docs
+
+* update snyk badge ([a7fbb1d](https://github.com/pustovitDmytro/stdlogger/commit/a7fbb1d0e408bec8b8a8f37d1ffef3921d1dc106))
+
 ## [1.3.2](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.1...v1.3.2) (2021-06-13)
 
 
