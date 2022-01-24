@@ -1,3 +1,14 @@
+## [1.3.5](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.4...v1.3.5) (2022-01-24)
+
+
+### Chore
+
+* Lock file maintenance (#40) ([20fc886](https://github.com/pustovitDmytro/stdlogger/commit/20fc8866d3f525f906e9bec81e4eb38508d0d09c)), closes [#40](https://github.com/pustovitDmytro/stdlogger/issues/40)
+
+### Docs
+
+* adds keywords ([caee267](https://github.com/pustovitDmytro/stdlogger/commit/caee2673fd1d6b997786ece42d0020d992ea2929))
+
 ## [1.3.4](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.3...v1.3.4) (2022-01-22)
 
 
