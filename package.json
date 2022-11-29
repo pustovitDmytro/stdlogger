@@ -62,7 +62,7 @@
     "chance": "^1.1.8",
     "conventional-changelog-eslint": "^3.0.9",
     "coveralls": "^3.1.1",
-    "danger": "^10.9.0",
+    "danger": "^11.2.0",
     "eslint": "^7.32.0",
     "eslint-config-incredible": "^2.4.1",
     "eslint-plugin-censor": "^1.5.2",
