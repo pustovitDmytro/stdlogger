@@ -1,15 +1,14 @@
 import defaults from './defaults';
+import inspect from './inspect';
 
 function simpleFormatter(options, data) {
-    return data;
+    return inspect(data);
 }
 
 function jsonFormatter(options, data) {
-    return [
-        data.length > 1
-            ? JSON.stringify(data)
-            : JSON.stringify(data[0])
-    ];
+    return data.length > 1
+        ? JSON.stringify(data)
+        : JSON.stringify(data[0]);
 }
 
 export default class Formatter {

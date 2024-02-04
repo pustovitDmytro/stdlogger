@@ -12,7 +12,7 @@ const testObj = {
 
 test('simple formatter', function () {
     const logger = new Logger({ format: 'simple' });
-    const expected = '{ a: { b: { t: 5 } }, arr: [ 1, 2, 3, { r: \'f\' } ] }';
+    const expected = '{ a: { b: { t: 5 } }, arr: [ 1, 2, 3, { r: f } ] }';
 
     verifyStdout(() => {
         logger.log(testObj);
@@ -21,7 +21,7 @@ test('simple formatter', function () {
 
 test('simple formatter: multiple arguments', function () {
     const logger = new Logger({ format: 'simple' });
-    const expected = '{ a: { b: { t: 5 } }, arr: [ 1, 2, 3, { r: \'f\' } ] } { second: true }';
+    const expected = '{ a: { b: { t: 5 } }, arr: [ 1, 2, 3, { r: f } ] } { second: true }';
 
     verifyStdout(() => {
         logger.log(testObj, { second: true });

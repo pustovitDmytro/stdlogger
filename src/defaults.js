@@ -12,8 +12,6 @@ const formatter = {};
 
 const console = {
     colorMode      : false,
-    stdout         : process.stdout,
-    stderr         : process.stderr,
     inspectOptions : inspect
 };
 

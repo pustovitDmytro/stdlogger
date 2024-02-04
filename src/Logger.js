@@ -1,26 +1,13 @@
-import { Console }  from 'console';
+import { isFunction } from 'myrmidon';
 import defaults from './defaults';
-import { isFunction } from './utils/common';
 import Formatter from './Formatter';
-
-function cloneConsoleConfig(obj) {
-    return {
-        ...obj,
-        inspectOptions : { ...obj.inspectOptions }
-    };
-}
 
 export default class Logger {
     constructor(config = {}) {
         this.levels = config.levels || defaults.levels;
         this.level = config.level || this.levels[0];
-        this.native = config.native || defaults.native;
-        this._console = this.native
-            ? console
-            : new Console(cloneConsoleConfig({
-                ...defaults.console,
-                ...config.console
-            }));
+        this._console = config.console || console;
+
         this._init();
         const formatter = new Formatter({
             type : config.format,
@@ -41,15 +28,13 @@ export default class Logger {
             this[level] = (...data) => {
                 const formatted = this.format(data);
 
-                this._console[consoleLevel](...formatted);
+                this._console[consoleLevel](formatted);
             };
         });
     }
 
     _getConsoleLevel(level) {
-        if (this.native) return isFunction(this._console[level]) ? level : 'log';
-
-        return level === 'error' ? level : 'log';
+        return isFunction(this._console[level]) ? level : 'log';
     }
 
     log = (level, ...data) => {
@@ -59,6 +44,6 @@ export default class Logger {
 
         const formatted = this.format([ level, ...data ]);
 
-        this._console.log(...formatted);
+        this._console.log(formatted);
     }
 }
