@@ -1,3 +1,26 @@
+## [1.3.6](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.5...v1.3.6) (2024-02-05)
+
+
+### Chore
+
+* fixes some npm audit vulnerabilities (#87) ([dc80d58](https://github.com/pustovitDmytro/stdlogger/commit/dc80d587ea2aeb5ca2dc545c0202ea0384d3161a)), closes [#87](https://github.com/pustovitDmytro/stdlogger/issues/87)
+* Lock file maintenance (#49) ([a979282](https://github.com/pustovitDmytro/stdlogger/commit/a9792821464cd6556f73e24a45c1f5df6f3e9d5c)), closes [#49](https://github.com/pustovitDmytro/stdlogger/issues/49)
+* Lock file maintenance (#56) ([ee606a7](https://github.com/pustovitDmytro/stdlogger/commit/ee606a7b2026d7564d14fcd9e8d1dfda64e9bdb1)), closes [#56](https://github.com/pustovitDmytro/stdlogger/issues/56)
+* Update dependency ansi-regex to 5.0.1 [SECURITY] (#55) ([978a25b](https://github.com/pustovitDmytro/stdlogger/commit/978a25bffe25e8f285c3fc2e8dd6027f9417fd79)), closes [#55](https://github.com/pustovitDmytro/stdlogger/issues/55)
+* Update dependency nanoid to 3.1.31 [SECURITY] (#48) ([87074cf](https://github.com/pustovitDmytro/stdlogger/commit/87074cffe50c6cde962e5c43ddc10a0534db7558)), closes [#48](https://github.com/pustovitDmytro/stdlogger/issues/48)
+* Update devDependencies (non-major) ([701112f](https://github.com/pustovitDmytro/stdlogger/commit/701112f1ebd29fa36b14ac635bb89cac8e6e5813))
+* Update devDependencies (non-major) ([d53745b](https://github.com/pustovitDmytro/stdlogger/commit/d53745bd86a178d1c0b4bfb614ebee5f141cf8d7))
+* Update devDependencies (non-major) (#54) ([a9801f0](https://github.com/pustovitDmytro/stdlogger/commit/a9801f05c3d6bc639044aefe360a1bf2a53eb27d)), closes [#54](https://github.com/pustovitDmytro/stdlogger/issues/54)
+* Update devDependencies (non-major) to ^7.23.6 ([7bc123a](https://github.com/pustovitDmytro/stdlogger/commit/7bc123a2f0c98adf58dd7641214423e53ea3d9cd))
+
+### Docs
+
+* update readme ([3574ae8](https://github.com/pustovitDmytro/stdlogger/commit/3574ae8516c4330bb67aa3e54ec67d7088ddc890))
+
+### Fix
+
+* drop node console ([abe80e3](https://github.com/pustovitDmytro/stdlogger/commit/abe80e323f1fb09ac449f87d7a4df2c2d41bb074))
+
 ## [1.3.5](https://github.com/pustovitDmytro/stdlogger/compare/v1.3.4...v1.3.5) (2022-01-24)
 
 
