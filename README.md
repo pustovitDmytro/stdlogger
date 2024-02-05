@@ -22,9 +22,13 @@ A simple isomorphic logger, that uses console transport.
 [![License][badge-lic]][github]
 
 ## Table of Contents
+- [stdlogger](#stdlogger)
+  - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
   - [Installation](#installation)
-  - [Usage](#usage)
+  - [Simple usage](#simple-usage)
+  - [Advanced usage](#advanced-usage)
+    - [Configuration:](#configuration)
   - [Contribute](#contribute)
 
 ## Requirements
@@ -75,6 +79,32 @@ const logger = new Logger({
 
 logger.log({ object: true });
 ```
+
+### Configuration:
+
+The following options are suitable for `Logger` configuration:
+
+- **levels:** An array with applicable logging levels. Default: `['debug', 'verbose', 'info', 'error']`. If accessible by `console[level]`, `console[level]` will be used; otherwise, `console.log` will be used.
+
+- **level:** Threshold log level. All messages with `log level < level` will be ignored. Verbosity is obtained from the index in the levels array. Default: `levels[0]`.
+
+- **console:** Use a separate console:
+
+```javascript
+import { Console } from 'console';
+import { consoleConfig } from 'stdlogger';
+
+const console = new Console(consoleConfig({
+    colorMode : true
+}));
+
+const logger = new Logger({ console });
+
+logger.log({ object: true });
+```
+
+- **format:** Select formatter. Possible options are `simple` and `json`. `simple` is selected by default.
+
 
 ## Contribute
 
